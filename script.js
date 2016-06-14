@@ -7,10 +7,12 @@ var ext = ".mp3"
 function Jukebox(){
 	audio = new Audio();
 	audio.src=music[0]+ext;
+	// audio.src = "";
+	// audio.play();
 	this.play = function(){audio.play()};
 	this.pause = function(){audio.pause()};
 	this.song = function(song){audio.src = song};
-	this.stop = function(){audio.load();};
+	this.stop = function(){ audio.pause();audio.load();};
 }
 
 var jb = new Jukebox();
@@ -75,10 +77,12 @@ $("#next").click(function(){
 })
 
 
+//when user clicks Add To Tracks
+$("#addToTrack").click(function(){
 
-$("#open").click(function(){
+  jb.stop();
   var path = document.getElementById("path").value;
-  // console.log(path);
+  console.log(path);
   music.push(path);
   audio.src = music[music.length-1];
   console.log(music);
@@ -86,14 +90,14 @@ $("#open").click(function(){
   jb.play();
   var song = document.getElementById("songname").value;
 
+  // add another list to the ul
   $('ul').append(
     $('<li id = "add">').click(function(){audio.src = path; jb.play(); 
     	$("#songtitle").html("Now Playing: " +song); }).text(song)
     )
 
   newAdded.push(song);
-  // $("#songtitle").html("Now Playing: "+song);
-  // $("ul").append('<li>document.getElementById("songname").value</li>');
+  $("#songtitle").html("Now Playing: " +song);
 
 
 })
