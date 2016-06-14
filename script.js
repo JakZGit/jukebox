@@ -78,10 +78,13 @@ $("#next").click(function(){
 
 
 //when user clicks Add To Tracks
-$("#addToTrack").click(function(){
 
+$("#addToTrack").click(function(){
   jb.stop();
   var path = document.getElementById("path").value;
+  if(path =="")
+  	return;
+
   console.log(path);
   music.push(path);
   audio.src = music[music.length-1];
@@ -89,7 +92,8 @@ $("#addToTrack").click(function(){
   index = music.length-1;
   jb.play();
   var song = document.getElementById("songname").value;
-
+  if(song == "")
+  	song = "Undefined";
   // add another list to the ul
   $('ul').append(
     $('<li id = "add">').click(function(){audio.src = path; jb.play(); 
@@ -98,9 +102,12 @@ $("#addToTrack").click(function(){
 
   newAdded.push(song);
   $("#songtitle").html("Now Playing: " +song);
+	
 
 
 })
+
+
 
 
 
