@@ -7,8 +7,6 @@ var ext = ".mp3"
 function Jukebox(){
 	audio = new Audio();
 	audio.src=music[0]+ext;
-	// audio.src = "";
-	// audio.play();
 	this.play = function(){audio.play()};
 	this.pause = function(){audio.pause()};
 	this.song = function(song){audio.src = song};
