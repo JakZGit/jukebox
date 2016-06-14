@@ -1,0 +1,94 @@
+#play{
+	background-image:url(https://www.slatecube.com/images/play-btn.png);
+	width:40px;
+	height:40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border:none;
+	cursor: pointer;
+	outline: none;
+}
+
+
+#pause{
+	background-image:url(http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-icons-media/003339-glossy-black-icon-media-a-media27-pause-sign.png);
+	width:40px;
+	height:40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border:none;
+	cursor: pointer;
+	outline: none;
+}
+
+#stop{
+	background-image: url(https://lh6.ggpht.com/jLbww4wJLs8F6qGEf0LPKnRJKDN42_SzLvvo1dwHm-F8GdMdtoh59H6WqpBpKhd1Mc8=w300);
+/*	background-image: url(https://youthclubblog.files.wordpress.com/2013/12/pipettes-stop-music.jpeg);*/
+	width:40px;
+	height:40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border:none;
+	cursor: pointer;
+	outline: none;
+}
+
+	
+#next{
+	background-image: url(https://cdn0.iconfinder.com/data/icons/arrows-31/100/arrow-10-512.png);
+/*	background-image: url(https://youthclubblog.files.wordpress.com/2013/12/pipettes-stop-music.jpeg);*/
+	width:40px;
+	height:40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border:none;
+	cursor: pointer;
+	outline: none;
+}
+
+#fire:hover,#home:hover,#fame:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	
+}
+
+#fire,#home,#fame,#songtitle{
+	color: white;
+}
+
+
+#fireimage{
+	background-image: url(https://www.ncptt.nps.gov/wp-content/uploads/fire-vector.png?7d0444);
+	width:100px;
+	height:100px;
+	background-size: 100% 100%;
+}
+
+
+
+body{
+	background-image: url(http://jerrysjukebox.moonfruit.com/communities/0/004/010/211/280/images/4567348007_525x318.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 1000px;
+}
+
+
+#text{
+	color: white;
+}
+
+#add:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	color: white;
+}
+
+#add{
+	color: white;
+}
+
+
+
+
+
